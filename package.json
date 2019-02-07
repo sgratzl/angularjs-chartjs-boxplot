@@ -7,8 +7,11 @@
   "license": "MIT",
   "dependencies": {
     "angular": "^1.7.5",
+    "angular-chart.js": "^1.1.1",
     "angular-loader": "^1.7.5",
     "angular-route": "^1.7.5",
+    "chart.js": "^2.7.3",
+    "chartjs-chart-box-and-violin-plot": "^1.2.1",
     "html5-boilerplate": "0.0.1"
   },
   "devDependencies": {
@@ -26,7 +29,7 @@
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist}/**/*\" app/lib -C",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist,chart.js/dist,angular-chart.js/dist,chartjs-chart-box-and-violin-plot/build}/**/*\" app/lib -C",
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
     "pretest": "npm install",
